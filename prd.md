@@ -21,7 +21,7 @@ Scope
 In scope for V1
 Configuration Front-End: A simple web interface for users to set up and manage the automation.
 
-Secure Credential Management: The ability for users to securely connect their Google accounts (via OAuth) and input necessary API keys (e.g., OpenAI).
+Secure Credential Management: The ability for users to securely connect their Google accounts (via OAuth)
 
 Webhook Display: The front-end will display the unique webhook URL that users must add to their website's contact form to trigger the automation.
 
@@ -89,7 +89,7 @@ Performance: The front-end application must load in under 3 seconds. The underly
 
 Reliability: The front-end must maintain a 99.9% uptime. The system's effectiveness is dependent on the uptime of the n8n instance and its third-party APIs.
 
-Security: All sensitive data, including API keys and lead information, must be encrypted both at rest and in transit. Access to the system dashboard must be protected by authentication.
+Security: All sensitive data, including lead information, must be encrypted both at rest and in transit. Access to the system dashboard must be protected by authentication.
 
 Usability: The front-end interface must be simple and intuitive, allowing a non-technical user (like Maria) to complete the entire setup process in under 15 minutes.
 
@@ -97,7 +97,7 @@ Assumptions and constraints
 Assumptions
 Customers will have a website with a form that can be configured to send data to a webhook.
 
-Customers will have the necessary permissions and ability to provide API keys and grant OAuth access for required services (Google Suite, LLM provider, etc.).
+Customers will have the necessary permissions to grant OAuth access for required services (Google Suite, Microsoft 365, etc.).
 
 The primary language for lead communication will be English for the MVP.
 
@@ -117,4 +117,4 @@ Secondary Metrics:
 
 Average Lead Response Time: The time from webhook submission to the initial email being sent. (Target: < 5 minutes).
 
-Setup Completion Rate: The percentage of new users who successfully complete the setup process (connecting accounts and API keys). (Target: > 90%).
+Setup Completion Rate: The percentage of new users who successfully complete the setup process (connecting accounts). (Target: > 90%).
